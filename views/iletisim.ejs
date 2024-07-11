@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <style>
+        body{
+            font-family: Arial;
+            margin: 0px;
+        }
+        nav{
+            background-color: #2e2f30;
+            height: 70px;
+            margin-bottom: 10px;
+            
+            padding: 0px;
+        }
+        ul{
+            list-style-type: none;
+            
+            margin:0px;
+            padding:25px;
+        }
+        li{
+            display: inline;
+            margin:10px;
+           
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .iletisimFormu{
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 5%;
+            background-color: #e8e37b;
+            padding:20px;
+            border-radius: 10px;
+        }
+        .alanlar{
+            margin-bottom: 20px;
+            padding: 10px;
+            margin-left: 10px;
+            margin-top: 10px;
+            width:85%;
+            border: none;
+            border-radius: 5px;
+           box-shadow: 1px 1px 1px 1px #5c5e5c;
+           
+        }
+        textarea{
+            padding: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            height: 70px;
+            margin-top: 10px;
+            width: 80%;
+            border-radius: 5px;
+           box-shadow: 1px 1px 1px 1px #5c5e5c;
+        }
+        #submit{
+            background-color: #0f97db;
+            color: white;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            font-size: 20px;
+            border: none;
+            box-shadow: 1px 1px 1px 1px #5c5e5c;
+        }
+       
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Anasayfa</a></li>
+            <li><a href="/iletisim">İletişim</a></li>
+            <li><a href="https://izu.edu.tr/">IZU Web Sayfası</a></li>
+        </ul>
+    </nav>
+    <div class="iletisimFormu">
+        <label for="Ad_soyad">Ad ve soyad</label>
+        <br>
+        <input type="text" id="Ad_soyad" placeholder="Adınızı ve Soyadınızı girin..." class="alanlar">
+        <br>
+        <label for="eposta">Eposta Adresi</label>
+        <br>
+        <input type="email" id="eposta" placeholder="Eposta adresiniz girin..." class="alanlar">
+
+        <br>
+        <label for="numara">Telefon numarası</label>
+        <br>
+        <input type="text" id="numara" placeholder="Telefon numaranızı girin..." class="alanlar">
+        <br>
+        <label for="mesaj">Mesaj</label>
+        <br>
+        <textarea id="mesaj" placeholder="Mesajınızı yazın" ></textarea>
+        <br>
+        <input type="submit" id="submit">
+
+        
+    </div>
+    
+</body>
+</html>

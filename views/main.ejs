@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Final Projesi</title>
+    <style>
+        body{
+            font-family: Arial;
+            margin: 0px;
+        }
+        nav{
+            background-color: #2e2f30;
+            height: 70px;
+            margin-bottom: 10px;
+            
+            padding: 0px;
+        }
+        ul{
+            list-style-type: none;
+            
+            margin:0px;
+            padding:25px;
+        }
+        li{
+            display: inline;
+            margin:10px;
+           
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        input{
+            width: 350px;
+            height: 30px;
+        }
+       
+    </style>
+    
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Anasayfa</a></li>
+            <li><a href="/iletisim">İletişim</a></li>
+            <li><a href="https://izu.edu.tr/">IZU Web Sayfası</a></li>
+        </ul>
+    </nav>
+    <form action="/arama" method="get">
+        <input name="query" type="text" value="<%= query %>" id="search" placeholder="deyim adı içinde filtrele">
+        <button type="submit">Filtrele</button>
+    </form>
+    <table border="1" >
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Deyim adı</th>
+                <th>Deyim açıklaması</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <% data.forEach(function(veri) { %>
+                <tr>
+                    <td><%= veri.deyim_id %></td>
+                    <td><%= veri.deyim_adi %></td>
+                    <td><%= veri.deyim_aciklama %></td>
+                    
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>
